@@ -130,15 +130,18 @@
                 <!-- END Side Overlay -->
 
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="op_auth_signin.html">
+                <a class="dropdown-item" href="{{route('logout')}}"
+                onclick="event.preventDefault();
+                document.getElementById('formLogout').submit();">
                   <i class="si si-logout mr-5"></i> Sign Out
                 </a>
+                <form id="formLogout" action="{{route('logout')}}" method="POST">@csrf</form>
               </div>
             </div>
             <!-- END User Dropdown -->
 
             <!-- Notifications -->
-            <div class="btn-group" role="group">
+            {{-- <div class="btn-group" role="group">
               <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-flag"></i>
                 <span class="badge badge-primary badge-pill">5</span>
@@ -207,7 +210,7 @@
                   <i class="fa fa-flag mr-5"></i> View All
                 </a>
               </div>
-            </div>
+            </div> --}}
             <!-- END Notifications -->
 
             <!-- Toggle Side Overlay -->
