@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Instansi;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Validation\ValidationException;
@@ -27,8 +28,8 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
-    // protected $redirectTo = RouteServiceProvider::DASHBOARD;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = RouteServiceProvider::DASHBOARD;
 
     /**
      * Create a new controller instance.
@@ -38,6 +39,12 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function showFrontEnd(Instansi $instansi)
+    {
+        $instansi = Instansi::all();
+        return view('layoutsFE.masterFE', compact('instansi'));
     }
 
     public function showLoginForm()
@@ -64,4 +71,5 @@ class LoginController extends Controller
         request()->merge([$fieldType => $login]);
         return $fieldType;
     }
+
 }
