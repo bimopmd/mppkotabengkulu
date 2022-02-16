@@ -1508,7 +1508,7 @@ Services Style
 }
 
 .services .naccs .menu div {
-    color: #5c5b5b;
+    color: #949494;
     margin: 0px;
     width: 15%;
     font-size: 20px;
@@ -1525,12 +1525,12 @@ Services Style
     display: inline-block;
     width: 100%;
     padding: 30px 0px;
-    background-color: rgb(242, 246, 248);
+    background-color: rgb(255, 255, 255);
 }
 
 .services .naccs .menu div.active {
     font-size: 1px;
-    box-shadow: 0px 0px 15px rgba(0, 67, 190, 0.1);
+    box-shadow: 1px 2px 15px rgba(23, 25, 31, 0.1);
 }
 
 .services ul.nacc {
@@ -1557,8 +1557,8 @@ Services Style
     z-index: 2;
     opacity: 1;
     transform: translateX(0px);
-    box-shadow: 0px 0px 15px rgba(0, 67, 190, 0.1);
-    background-color: rgb(242, 246, 248);
+    box-shadow: 0px 0px 15px rgba(21, 25, 31, 0.1);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 80px 120px 50px 120px;
 }
@@ -1762,7 +1762,7 @@ Portfolio
 }
 
 .portfolio-item .down-content {
-    background-color: rgb(106, 141, 115);
+    background-color: rgb(255, 245, 231);
     text-align: center;
     padding: 18px 0px;
     border-bottom-right-radius: 23px;
@@ -1802,21 +1802,19 @@ Portfolio
     text-align: center;
     line-height: 46px;
     font-size: 30px;
-    background-color: rgb(241, 229, 225);
+    background-color: rgb(245, 238, 236);
     border-bottom: 50%;
-    color: rgb(255, 136, 0);
+    color: rgb(248, 120, 0);
     transition: all 0.5s;
 }
 
 .our-portfolio .owl-nav span:hover {
-    color: rgb(255, 136, 0);
-    background-color: #50bb50;
+    color: rgb(121, 60, 32);
+    background-color: #6f946f;
 }
 
 .kotak {
-    box-shadow: 7px 7px 10px 2px rgba(233, 232, 232, 0.8);
-    /* padding: 10px; */
-    /* border: 1px dashed grey; */
+    box-shadow: 7px 7px 10px 2px rgba(18, 20, 18, 0.8);
 }
 
 /*

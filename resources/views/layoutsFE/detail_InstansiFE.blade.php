@@ -40,34 +40,38 @@
     <link href="{{asset('assets/css/bootstrap-dentcare.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/style-dentcare.css')}}" rel="stylesheet">
     <!-- end dentcare -->
+    <style type="text/css">
+            .left {
+                text-align: left;
+            }
+
+            .right {
+                text-align: right;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .justify {
+                text-align: justify;
+            }
+            @font-face {
+                font-family: "BillionDreams";
+                src: url('assets/font/BillionDreams_PERSONAL.ttf') format('truetype');
+            }
+            .heebo{
+                font-family: "heebo";
+                src: url('assets/font/Heebo-VariableFont_wght.ttf') format('truetype');
+            }
+            .montserrat{
+                font-family: "montserrat";
+                src: url('assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+            }
+    </style>
 
 </head>
 
-<style type="text/css">
-        .left {
-            text-align: left;
-        }
-
-        .right {
-            text-align: right;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        .justify {
-            text-align: justify;
-        }
-        @font-face {
-            font-family: "BillionDreams";
-            src: url('assets/font/BillionDreams_PERSONAL.ttf') format('truetype');
-        }
-        .heebo{
-            font-family: "heebo";
-            src: url('assets/font/Heebo-VariableFont_wght.ttf') format('truetype');
-        }
-</style>
 
 <body>
     <!-- Spinner Start -->

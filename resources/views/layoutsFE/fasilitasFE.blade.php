@@ -1,9 +1,38 @@
+<style type="text/css">
+            .left {
+                text-align: left;
+            }
+
+            .right {
+                text-align: right;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .justify {
+                text-align: justify;
+            }
+            @font-face {
+                font-family: "BillionDreams";
+                src: url('assets/font/BillionDreams_PERSONAL.ttf') format('truetype');
+            }
+            .heebo{
+                font-family: "heebo";
+                src: url('assets/font/Heebo-VariableFont_wght.ttf') format('truetype');
+            }
+            .montserrat{
+                font-family: "montserrat";
+                src: url('assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+            }
+    </style>
 <div id="services" class="services section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <h2>Fasilitas</h2>
+                        <h2 style="font-family: 'montserrat', heebo;">Fasilitas</h2>
                         <h4>Mal Pelayanan Publik <em>Kota Bengkulu</em></h4>
                         <div class="line-dec"></div>
                     </div>

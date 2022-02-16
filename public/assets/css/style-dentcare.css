@@ -209,7 +209,7 @@ h6,
 
 .bg-appointment1 {
     /* background: linear-gradient(rgba(206, 210, 214, 0.85), rgba(206, 210, 214, 0.85)), url(../img/carousel-1.jpg) center center no-repeat; */
-    background: url(../img/background-instansi/background-body.jpg) center
+    background: url(../img/background-instansi/background-body2.jpg) center
         center no-repeat;
     background-size: cover;
 }
@@ -225,10 +225,7 @@ h6,
 }
 
 .bg-appointment3 {
-    background: linear-gradient(
-            rgba(130, 175, 124, 0.85),
-            rgba(130, 175, 124, 0.85)
-        ),
+    background: linear-gradient(#82af7cd9, rgba(130, 175, 124, 0.85)),
         url(../img/background-instansi/background-detail2.jpg) center center
             no-repeat;
     background-size: cover;
@@ -237,14 +234,19 @@ h6,
     background-size: cover; */
 }
 
+.bg-instansi {
+    background: linear-gradient(#b5ccb2d9, rgba(130, 175, 124, 0.85)),
+        url(../img/background-instansi/background-detail2.jpg) center center
+            no-repeat;
+    background-size: cover;
+}
+
 .bg-slider1 {
-    background: linear-gradient(
-            rgba(108, 109, 110, 0.85),
-            rgba(192, 191, 191, 0.85)
-        ),
+    background: linear-gradient(rgba(54, 54, 54, 0.85), rgba(54, 54, 54, 0.85)),
         url(../img/background-header/background-header5.jpg) center center
             no-repeat;
     background-size: cover;
+    /* opacity: 0.4; */
     /* background: url(../img/background-instansi/background-detail2.jpg) center
         center no-repeat;
     background-size: cover; */

@@ -106,35 +106,6 @@
 
 
     <!-- Navbar Start -->
-    {{-- <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h4 class="m-0 color-mpp">MPP Kota Bengkulu</h4>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="scroll-to-section nav-item nav-link">About</a>
-                <a href="#services" class="nav-item nav-link">Fasilitas</a>
-                <a href="#instansi" class="nav-item nav-link">Instansi</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="team.html" class="dropdown-item">Our Dentist</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
-                    class="fa fa-search"></i></button>
-            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Login</a>
-        </div>
-    </nav> --}}
     @include('layoutsFE.headerFE')
     <!-- Navbar End -->
 
@@ -184,11 +155,16 @@
             font-family: "heebo";
             src: url('assets/font/Heebo-VariableFont_wght.ttf') format('truetype');
         }
+        .montserrat{
+            font-family: "montserrat";
+            src: url('assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+        }
 
     </style>
     <div class="banner-carousel banner-carousel-1 mb-0 fluid p-0">
-        <div class="banner-carousel-item bg-slider2">
+        <div class="banner-carousel-item bg-slider1">
         {{-- <div class="banner-carousel-item" style="background-image:url({{asset('assets/img/background-header/background-header5.jpg')}})"> --}}
+        {{-- <div class="banner-carousel-item bg-appointment1"> --}}
             <div class="slider-content-overlay">
                 <div class="container h-100">
                     <div class="row align-items-center h-100">
@@ -245,8 +221,6 @@
         </div>
     </div>
     <!-- Carousel End -->
-
-
     <!-- Banner Start -->
     <section class="call-to-action-box no-padding">
         <div class="container">
@@ -294,12 +268,10 @@
             font-family: "BillionDreams";
             src: url('font/BillionDreams_PERSONAL.ttf') format('truetype');
         }
-
-        /* h1 {
-            font-size: 16px;
-            text-justify: auto;
-            font-family: "BillionDreams", arial;
-        } */
+        .montserrat{
+            font-family: "montserrat";
+            src: url('assets/font/Montserrat-VariableFont_wght.ttf') format('truetype');
+        }
     </style>
     <!-- About Start -->
     @include('layoutsFE.aboutFE')
@@ -319,7 +291,7 @@
     <br>
 
     <!-- Appointment Start -->
-    <div id="instansi" class="instansi container-fluid bg-appointment kotak my-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div id="instansi" class="instansi container-fluid bg-instansi kotak my-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="col-lg py-5">
             <div class="py-12">
                 <div id="portfolio" class="our-portfolio kotak section">
@@ -328,8 +300,8 @@
                             <div class="col-lg-6">
                                 <div class="section-heading wow fadeInLeft" data-wow-duration="1s"
                                     data-wow-delay="0.3s">
-                                    <h6>Our Portofolio</h6>
-                                    <h4>See Our Recent <em>Projects</em></h4>
+                                    <h6>Text Content</h6>
+                                    <h4>Text <em>Content</em></h4>
                                     <div class="line-dec"></div>
                                 </div>
                             </div>
@@ -367,7 +339,7 @@
                     </div>
                 </div>
                 <div data-animation-in="slideInLeft">
-                    <a href="contact.html" class="slider btn btn-primary" aria-label="contact-with-us">View All
+                    <a href="contact.html" class="slider btn btn-primary"  aria-label="contact-with-us">View All
                         Instansi</a>
                 </div>
             </div>
